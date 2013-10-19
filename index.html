@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Touch Glow</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/touchglow-demo.css" />
+		<script src="javascripts/jquery-1.10.2.min.js"></script>
+		<script src="javascripts/jquery.touchglow.js"></script>
+
+	</head>
+	<body>
+
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div class="jumbotron">
+				<div class="container">
+					<h1>Touch Glow</h1>
+					<p>A jQuery plugin that provides visual feedback on mouse/touch actions. Try clicking on this panel.</p>
+					<a class="btn btn-primary btn-lg" href="javascripts/jquery.touchglow.js" target="_blank">Download</a>
+					<a class="btn btn-info btn-lg" href="http://frontend2359.wordpress.com/2013/10/16/tra-jquery-plugin-post/">Learn more »</a>
+
+				</div>
+			</div>
+		</div>
+		<!-- Header Ends Here -->
+
+		
+		<!-- Main Content Area -->
+		<div class="tg-section">
+			<div class ="container">
+				<h2>Usage</h2>
+				<h4>Include jQuery and Touch Glow script files in your project.</h4>
+				<div class="col-md-11 col-md-offset-1">
+					<p>You can initialize the script in the following ways:</p>
+				</div>
+				<div class="col-md-11 col-md-offset-1">
+					<pre>$(selector).touchglow();</pre>	
+				</div>
+				<div class="col-md-11 col-md-offset-1">
+					<pre>$(selector).touchglow({
+    touchBlurRadius: 30,
+    touchSpread: 20
+});</pre>
+				</div>
+				<div class="col-md-11 col-md-offset-1">
+					<p>NOTE: Touch Glow options are set globally. Any subsequent settings will override the previous. To set style, simply call touch glow with options after it's been initialized:</p>
+				</div>
+				<div class="col-md-11 col-md-offset-1">
+					<pre>$.touchglow({
+    touchBlurRadius: 30,
+    touchSpread: 20
+});</pre>
+				</div>
+				<div class="col-md-11 col-md-offset-1">
+					<p>However, it is recommended that all the options set at the time of initilization.</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="tg-options tg-section">
+			<div class="container">
+				<h2>Options</h2>
+				<h4>All parameters are optional. Default values are shown rightmost.</h4>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						touchName
+						<code>[string]</code>
+					</div>
+					<div class="col-md-7">
+						ID attribute of the touch div <code>'jquery-touch-glow'</code>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						touchBlurRadius
+						<code>[pixels]</code>
+					</div>
+					<div class="col-md-7">
+						The blur distance <code>60</code>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						touchSpread
+						<code>[pixels]</code>
+					</div>
+					<div class="col-md-7">
+						Size of the touch glow <code>30</code>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						touchOffsetX
+						<code>[pixels]</code>
+					</div>
+					<div class="col-md-7">
+						Horizontal offset from the mouse/touch position <code>0</code>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						touchOffsetY
+						<code>[pixels]</code>
+					</div>
+					<div class="col-md-7">
+						Vertical offset from the mouse/touch position <code>0</code>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						touchColor
+						<code>[color]</code>
+					</div>
+					<div class="col-md-7">
+						Color of the touch glow <code>'blueviolet'</code>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						innerWidth
+						<code>[pixels]</code>
+					</div>
+					<div class="col-md-7">
+						Solid inner width of the touch glow <code>0</code>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						fadeInDuration
+						<code>[miliseconds]</code>
+					</div>
+					<div class="col-md-7">
+						Duration of the fade in animation <code>100</code>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						fadeOutDuration
+						<code>[miliseconds]</code>
+					</div>
+					<div class="col-md-7">
+						Duration of the fade out animation <code>300</code>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						afterFadeOut (element)
+						<code>[function]</code>
+					</div>
+					<div class="col-md-7">
+						Callback function to execute after the glow fades out
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<hr>
+		<div class="tg-section">
+			<div class="container">
+				<h2>Demo</h2>
+				<h4>Click on the buttons below to activate the corresponding scripts.</h4>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						<div class="touch-demo-area">
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="btn btn-primary" id='demo-init'>Init Touch Glow</div>
+						<pre>$('.touch-demo-area').touchglow();</pre>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						<div class="touch-demo-area">
+							
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="btn btn-primary" id="demo-style-A">Set Style A</div>
+						<pre>$.touchglow({
+    touchBlurRadius: 100,
+    touchSpread: 60,
+    touchColor: '#5bc0de',
+});</pre>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						<div class="touch-demo-area">
+							
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="btn btn-primary" id="demo-style-B">Set Style B</div>
+						<pre>$.touchglow({
+    touchOffsetX: -10,
+    touchOffsetY: -10,
+    fadeInDuration: 50,
+    fadeOutDuration: 1000
+});</pre>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						<div class="touch-demo-area">
+							
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="btn btn-primary" id="demo-callback">Set Callback</div>
+						<pre>$.touchglow({
+    afterFadeOut: function (touchedElement) {
+        touchedElement.toggleClass('tg-border');
+    }
+});</pre>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!-- Main Content Ends Here -->
+
+		<hr>
+
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<div class="container">
+				<div class="footer-logo">
+					<div class="credit-text">
+						By Tra Nguyen, 2359 Media.
+					</div>
+					<img src="images/nst-logo-retina.png" alt="nst-logo" width="45" height="45">
+				</div>
+				
+			</div>
+		</div>
+		<!-- Footer Ends Here -->
+
+		<script type="text/javascript">
+			$( document ).ready(function() {
+			    //$('.try-me').touchglow();
+			    $('#header-wrapper').touchglow({
+			    	afterFadeOut: function(touchedElement){
+			    		var link = touchedElement.attr('href');
+			    		if (link !== undefined) {
+			    			window.location = link;
+			    		}
+
+			    	}
+			    });
+	
+
+			    $('#demo-init').click(function(){
+			    	$('.touch-demo-area').touchglow();
+			    });
+
+			    $('#demo-style-A').click(function(){
+			    	$.touchglow({
+			    		touchBlurRadius: 100,
+			    		touchSpread: 60,
+			    		touchColor: '#5bc0de',
+			    	});
+			    });
+
+			    $('#demo-style-B').click(function(){
+			    	$.touchglow({
+			    		touchOffsetX: -10,
+			    		touchOffsetY: -10,
+			    		fadeInDuration: 50,
+			    		fadeOutDuration: 1000
+			    	});
+			    });
+
+			    $('#demo-callback').click(function(){
+			    	$.touchglow({
+			    		afterFadeOut: function(touchedElement){
+			    			touchedElement.toggleClass('tg-border');
+			    		}
+			    	});
+			    });
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,92 @@
+.touch-demo-area {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: #eeeeee;
+  margin: 10px auto;
+}
+
+.tg-section .row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tg-options .col-md-4 {
+  font-weight: 700;
+}
+
+.tg-border {
+  box-shadow: 0 0 0 1px #8816BE;
+}
+
+#header-wrapper .btn {
+  margin-bottom: 10px
+}
+
+#footer-wrapper {
+  /*background-color: #8816BE;*/
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.credit-text {
+  color: gray;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+/* Bootstrap Override */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+pre {
+  color: #8816BE;
+  border-radius: 0px;
+}
+
+code {
+  color: #8816BE;
+  background-color: #F7F2F9;
+}
+
+.jumbotron h1 {
+  color: #8816BE;
+}
+
+.btn, .btn-lg {
+  border-radius: 0px;
+}
+
+.btn-primary {
+  background-color: #9942CA;
+  border-color: #8C35BD;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+  background-color: #8317AD;
+  border-color: #611081;
+}
