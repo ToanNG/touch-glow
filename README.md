@@ -1,7 +1,11 @@
 Touch Glow
 ==========
 
-A jQuery plugin that provides visual feedback on mouse/touch actions. Try clicking on this panel.
+A jQuery plugin that provides visual feedback on mouse/touch actions.
+
+[DEMO](https://googledrive.com/host/0B2hu4Ysseec3TkJRYi1IQ1ZDZzQ/index.html)
+
+[Blog post](http://frontend2359.wordpress.com/2013/10/16/tra-jquery-plugin-post/)
 
 # Usage
 
